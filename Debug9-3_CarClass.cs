@@ -26,6 +26,7 @@ class Car
    private int price;
 
    // Constructors
+   //  the this acts as a default values or it can accept an argument
    public Car() : this(10000, "black")
    {
    }
@@ -33,10 +34,12 @@ class Car
    {
      
    }
+
+   // the this in this scenario is basically just explicilty saying this version = that
    public Car(int price, string color)
    {
        this.Price = price;
-       Color = color;
+       this.Color = color;
    }
 
    // Properties
